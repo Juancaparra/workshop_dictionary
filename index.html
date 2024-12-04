@@ -13,6 +13,43 @@
     
     <section class="section-main">
 
+        <div class="container-form">
+            <h3>Nueva Palabra</h3>
+
+            <p>Palabra en Ingles</p>
+            <input type="text" id="input-new-word" placeholder="Nueva Palabra Ingles">
+
+            <p>Traducción a Español</p>
+            <input type="text" id="input-new-word-spanish" placeholder="Traducción Español">
+
+            <p>Ejemplo de Oracion</p>
+            <input type="text" id="example-input" placeholder="Ejemplo">
+            
+            <div class="categories-form">
+
+                <h3>Categorías</h3>
+
+                <div class="radio-group">
+                    <label for="animales">Animales</label>
+                    <input type="radio" id="animales" name="categorie-form" value="animals">
+                    <label for="frutas">Frutas</label>
+                    <input type="radio" id="frutas" name="categorie-form" value="fruits">
+                    <label for="colores">Colores</label>
+                    <input type="radio" id="colores" name="categorie-form" value="colors">
+                    <label for="descripciones">Descripciones</label>
+                    <input type="radio" id="descripciones" name="categorie-form" value="physical_descriptions">
+                    <label for="habilidades">Habilidades</label>
+                    <input type="radio" id="habilidades" name="categorie-form" value="skills">
+                    <label for="verbos">Verbos</label>
+                    <input type="radio" id="verbos" name="categorie-form" value="verbs">
+                </div>
+
+                <button class="button">Agregar Palabra</button>
+
+            </div>
+            
+        </div>
+
         <div class="container-main">
 
             <div class="container-word">
@@ -56,7 +93,19 @@
                     <button class="button">Nueva Palabra</button>
                 </div>
             </div>
-        </div>       
+        </div>
+        <div class="container-dictionary">
+            <p>Diccionario</p>
+            <div class="radio-group">
+                <p>Ordenar por:</p>
+                <label for="english">Inglés (A-Z)</label>
+                <input type="radio" id="english" name="orderLanguage" value="english">
+                <label for="spanish">Español (A-Z)</label>
+                <input type="radio" id="spanish" name="orderLanguage" value="spanish">
+            </div>
+        
+            <div id="diccionarioContainer" class="dictionary-content"></div>
+        </div>        
     </section>
 </body>
 <script type="module" src="app.js"></script>
