@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h1>TRADUCTOR/TRANSLATE</h1>
+    </header>
+    
+    <section class="section-main">
+
+        <div class="container-main">
+
+            <div class="container-word">
+                <p>Palabra/word</p>
+                <input type="text" id="input-word" placeholder="Palabra">
+            </div>
+
+            <div class="radio-group">
+                <label for="ingles">Inglés</label>
+                <input type="radio" id="english" name="idiom" value="ingles">
+                <label for="español">Español</label>
+                <input type="radio" id="spanish" name="idiom" value="español">
+            </div>
+
+            <div class="input-group">
+                <button id="translatebtn" class="button">Traducir/Translate</button>
+                <input type="text" id="answer" placeholder="response/respuesta">
+            </div>
+
+            <div class="categories">
+
+                <h2>Categorías</h2>
+
+                <div class="radio-group">
+                    <label for="animales">Animales</label>
+                    <input type="radio" id="animales" name="categorie" value="animals">
+                    <label for="frutas">Frutas</label>
+                    <input type="radio" id="frutas" name="categorie" value="fruits">
+                    <label for="colores">Colores</label>
+                    <input type="radio" id="colores" name="categorie" value="colors">
+                    <label for="descripciones">Descripciones</label>
+                    <input type="radio" id="descripciones" name="categorie" value="physical_descriptions">
+                    <label for="habilidades">Habilidades</label>
+                    <input type="radio" id="habilidades" name="categorie" value="skills">
+                    <label for="verbos">Verbos</label>
+                    <input type="radio" id="verbos" name="categorie" value="verbs">
+                </div>
+
+                <div class="input-group">
+                    <input class="input2" type="text" id="answer2" placeholder="Aquí irán la lista de palabras">
+                    <button class="button">Nueva Palabra</button>
+                </div>
+            </div>
+        </div>       
+    </section>
+</body>
+<script type="module" src="app.js"></script>
+<script type="module" src="dictionary.js"></script>
+</html>
